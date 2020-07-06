@@ -9,6 +9,8 @@ frameHeight = 480
 cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
 df = pd.read_csv('resources/required-data.csv')
 
+out = cv2.VideoWriter('output/output.mp4', -1, 20.0, (frameWidth, frameHeight))
+
 def draw_overlay(points):
     prev_point = None
     for point in points:
@@ -31,9 +33,12 @@ while True:
     
     cv2.imshow("Result", img)
 
+    out.write(img)
     
     if cv2.waitKey(1) == ord('q') or count > 40:
          break
     count+=1
 
+cap.release()
+out.release()
 cv2.destroyAllWindows()
