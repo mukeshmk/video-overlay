@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-df = pd.read_csv('resources/export.csv')
+df = pd.read_csv('resources/export-300frames.csv')
 
 data = {}
 data['count'] = []
