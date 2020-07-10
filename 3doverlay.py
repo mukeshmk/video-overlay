@@ -6,7 +6,11 @@ import pandas as pd
 frameWidth = 640
 frameHeight = 480
 
+cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
+cap.set(cv2.CAP_PROP_FPS, 20)
+
 df = pd.read_csv('resources/3d-annotation.csv')
+df = df.fillna('-1')
 
 def draw_face(img, p):
     for i in range(len(p)):
@@ -21,19 +25,30 @@ def draw_overlay(img, points, faces):
         img = draw_face(img, [points[face[0]], points[face[1]], points[face[2]], points[face[3]]])
     return img
 
-img = cv2.imread('img-10.jpg')
-img = cv2.resize(img, (frameWidth, frameHeight))
+count = 0
+while True:
+    success, img = cap.read()
+    if not success:
+        break
 
-if math.isnan(df['points']):
-    points = []
-    faces = []
-else:
-    points = json.loads(df['points'].iloc[0])
-    faces = json.loads(df['faces'].iloc[0])
+    img = cv2.resize(img, (frameWidth, frameHeight))
 
-    img = draw_overlay(img, points, faces)
+    data = df.loc[df['count'] == count]
 
-cv2.imshow("Result", img)
+    if data['points'].iloc[0] == '-1':
+        points = []
+        faces = []
+    else:
+        points = json.loads(data['points'].iloc[0])
+        faces = json.loads(data['faces'].iloc[0])
 
-cv2.waitKey(0)
+        img = draw_overlay(img, points, faces)
+
+    cv2.imshow("Result", img)
+
+    if cv2.waitKey(1) == ord('q') or count + 2 > 300:
+        break
+    count+=1
+
+cap.release()
 cv2.destroyAllWindows()
