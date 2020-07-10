@@ -23,4 +23,4 @@ for i in range(300):
 
 df = pd.DataFrame.from_dict(data)
 
-df.to_csv('resources/3d-annotation.csv')
+df.to_csv('resources/3d-annotation.csv', index=False)
