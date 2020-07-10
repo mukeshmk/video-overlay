@@ -12,6 +12,8 @@ cap.set(cv2.CAP_PROP_FPS, 20)
 df = pd.read_csv('resources/3d-annotation.csv')
 df = df.fillna('-1')
 
+out = cv2.VideoWriter('output/output-3doverlay.mp4', -1, 20.0, (frameWidth, frameHeight))
+
 def draw_face(img, p):
     for i in range(len(p)):
         j = i + 1
@@ -46,9 +48,12 @@ while True:
 
     cv2.imshow("Result", img)
 
+    out.write(img)
+
     if cv2.waitKey(1) == ord('q') or count + 2 > 300:
         break
     count+=1
 
 cap.release()
+out.release()
 cv2.destroyAllWindows()
