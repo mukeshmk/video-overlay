@@ -1,0 +1,132 @@
+<!--base code taken from https://www.digitalocean.com/community/tutorials/introduction-to-computer-vision-in-javascript-using-opencvjs-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OpenCV.js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <style type="text/css">
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, .8) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+
+        body.loading .modal {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="jumbotron">
+            <h1>OpenCV - Video Overlay</h1>
+            <p>This website uses OpenCV.JS to overlay bounding box over a video.</p>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-header">
+                        Original Video
+                    </div>
+                    <div class="card-block text-center">
+                        <img id="videoOriginal" alt="Upload" class="card-img-top" />
+                    </div>
+                    <div class="card-footer text-muted">
+                        <input type="file" id="videoInput" name="file" />
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-header">
+                        Overlayed Video
+                    </div>
+                    <div class="card-block">
+                        <canvas id="videoCanvas"></canvas>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" id="overlaybutton" class="btn btn-primary">Overlay Video</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal"></div>
+
+    <script type="text/javascript">
+        document.body.classList.add("loading");
+
+        let imgElement = document.getElementById('videoOriginal');
+
+        let inputElement = document.getElementById('videoInput');
+        inputElement.addEventListener('change', (e) => {
+            imgElement.src = URL.createObjectURL(e.target.files[0]);
+        }, false);
+        
+        let mat;
+
+        imgElement.onload = function () {
+            mat = cv.imread(imgElement);
+            cv.imshow('imageCanvas', mat);
+        };
+
+        document.getElementById('circlesButton').onclick = function () {
+            this.disabled = true;
+
+            let mat = cv.imread('imageCanvas');
+            let dst = mat.clone();
+            let circles = new cv.Mat();
+            cv.cvtColor(mat, mat, cv.COLOR_RGBA2GRAY, 0);
+            // You can try more different parameters
+            cv.HoughCircles(mat, circles, cv.HOUGH_GRADIENT,
+                1, 45, 75, 40, 0, 0);
+            // draw circles
+            for (let i = 0; i < circles.cols; ++i) {
+                let x = circles.data32F[i * 3];
+                let y = circles.data32F[i * 3 + 1];
+                let radius = circles.data32F[i * 3 + 2];
+                let center = new cv.Point(x, y);
+                cv.circle(dst, center, radius, [0, 0, 0, 255], 3);
+            }
+
+            cv.imshow('imageCanvas', dst);
+            mat.delete();
+            dst.delete();
+            circles.delete();
+
+            this.disabled = false;
+        };
+
+        document.getElementById('button').onclick = function () {
+            this.href = document.getElementById("imageCanvas").toDataURL();
+            this.download = "image.png";
+        };
+
+        function onOpenCvReady() {
+            document.body.classList.remove("loading");
+        }
+    </script>
+
+    <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+
+</body>
+
+</html>
