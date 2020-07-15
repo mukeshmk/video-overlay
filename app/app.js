@@ -1,14 +1,25 @@
+
 function onCvLoaded() {
     console.log('cv', cv);
-    cv.onRuntimeInitialized = onReady;
+    cv.onRuntimeInitialized = testCSV;
 }
 
 const video = document.getElementById('video');
-const actionBtn = document.getElementById('actionBtn');
-const FPS = 30;
 
+const actionBtn = document.getElementById('actionBtn');
+
+const FPS = 30;
 let stream;
 let streaming = false;
+let data;
+let count = 0;
+
+async function testCSV() {
+    data = await d3.csv("../resources/3d-annotation.csv").then(function (res) {
+        return res
+    });
+    setTimeout(onReady, 0);
+}
 
 function onReady() {
     console.log('ready');
@@ -45,10 +56,11 @@ function onReady() {
         }
         const begin = Date.now();
         cap.read(src)
-        cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY);
+
         cv.imshow('canvasOutput', dst);
+
         const delay = 1000 / FPS - (Date.now() - begin);
+        count++;
         setTimeout(processVideo, delay);
     }
 }
-

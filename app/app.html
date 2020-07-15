@@ -7,9 +7,13 @@
 
 <body>
     <h1>OpenCV Video</h1>
-    <video id="video" src="trailer.mp4" muted width="320" height="240"></video>
-    <canvas id="canvasOutput" width="320" height="240"></canvas>
+    
+    <video id="video" src="../resources/object_detect_test_vid.mp4" muted width="640" height="480"></video>
+    
+    <canvas id="canvasOutput" width="640" height="480"></canvas>
+    
     <script async src="opencv.js" type="text/javascript" onload="onCvLoaded();"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="app.js"></script>
 </body>
 
