@@ -12,7 +12,7 @@ cap.set(cv2.CAP_PROP_FPS, 20)
 
 def saveImg(count, img):
     # cv2.imwrite("output/frames/img-" + str(count) + ".jpg", img)
-    cv2.imwrite("output/new-car/img-" + str(count) + ".jpg", img)
+    cv2.imwrite("output/frames/new-car/img-" + str(count) + ".jpg", img)
 
 count = 0
 while True:

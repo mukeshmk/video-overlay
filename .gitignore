@@ -1,6 +1,9 @@
 # VS Code
 .vscode/
 
+# ignoreing all the images in frames folder
+output/frames/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
