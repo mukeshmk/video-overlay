@@ -6,11 +6,13 @@ import pandas as pd
 frameWidth = 640
 frameHeight = 480
 
-cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
+# cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
+cap = cv2.VideoCapture("resources/sample_toy_car.mp4")
 cap.set(cv2.CAP_PROP_FPS, 20)
 
 def saveImg(count, img):
-    cv2.imwrite("output/frames/img-" + str(count) + ".jpg", img)
+    # cv2.imwrite("output/frames/img-" + str(count) + ".jpg", img)
+    cv2.imwrite("output/new-car/img-" + str(count) + ".jpg", img)
 
 count = 0
 while True:
@@ -24,7 +26,7 @@ while True:
     
     cv2.imshow("Result", img)
     
-    if cv2.waitKey(1) == ord('q'):
+    if cv2.waitKey(1) == ord('q') or count > 200:
          break
     count+=1
 
