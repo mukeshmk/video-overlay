@@ -8,7 +8,7 @@ const video = document.getElementById('video');
 
 const actionBtn = document.getElementById('actionBtn');
 
-const FPS = 30;
+const FPS = 20;
 let stream;
 let streaming = false;
 let data;
@@ -51,9 +51,9 @@ function onReady() {
 
     function drawFace(points) {
         let j;
-        for(let i = 0; i < points.length; i++) {
+        for (let i = 0; i < points.length; i++) {
             j = i + 1
-            if(i + 1 == points.length) {
+            if (i + 1 == points.length) {
                 j = 0
             }
             cv.line(dst, new cv.Point(parseInt(points[i][0]), parseInt(points[i][1])),
@@ -62,12 +62,12 @@ function onReady() {
     }
 
     function overlayOnImage(frameData) {
-        if(frameData['points'] == '') {
+        if (frameData['points'] == '') {
             return
         }
         points = JSON.parse(frameData['points']);
         faces = JSON.parse(frameData['faces']);
-        
+
         faces.forEach(face => {
             drawFace([points[face[0]], points[face[1]], points[face[2]], points[face[3]]])
         });
@@ -83,19 +83,18 @@ function onReady() {
         cap.read(src)
 
         // To rotate the image
-        let dsize = new cv.Size(src.rows, src.cols);
+        let dsize = new cv.Size(src.cols, src.rows);
         let center = new cv.Point(src.cols / 2, src.rows / 2);
         let M = cv.getRotationMatrix2D(center, 90, 1);
         cv.warpAffine(src, dst, M, dsize, cv.INTER_LINEAR, cv.BORDER_CONSTANT, new cv.Scalar());
-        // to change colour
-        cv.cvtColor(dst, dst, cv.COLOR_RGBA2RGB);
-
+        
         overlayOnImage(data[count]);
 
         cv.imshow('canvasOutput', dst);
 
         const delay = 1000 / FPS - (Date.now() - begin);
+        console.log(count);
         count++;
-        setTimeout(processVideo, delay);
+        setTimeout(processVideo, 0);
     }
 }
