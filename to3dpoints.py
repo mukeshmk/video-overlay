@@ -6,9 +6,12 @@ data['count'] = []
 data['faces'] = []
 data['points'] = []
 
+# count_range = range(300)
+count_range = list(range(50, 100)) + list(range(101, 161))
 
-for i in range(300):
-    f = open('resources/cars/frames/ann/img-'+ str(i) +'.jpg.json') 
+for i in count_range:
+    # f = open('resources/cars/frames/ann/img-'+ str(i) +'.jpg.json') 
+    f = open('resources/new-car/bb3d-new-car/img-'+ str(i) +'.json') 
     
     obj = json.load(f)
     data['count'].append(i)
@@ -23,4 +26,4 @@ for i in range(300):
 
 df = pd.DataFrame.from_dict(data)
 
-df.to_csv('resources/3d-annotation.csv', index=False)
+df.to_csv('resources/bb3d-new-car.csv', index=False)
