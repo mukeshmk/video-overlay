@@ -6,13 +6,15 @@ import pandas as pd
 frameWidth = 640
 frameHeight = 480
 
-cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
+# cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
+cap = cv2.VideoCapture("resources/new-car/sample_toy_car.mp4")
 cap.set(cv2.CAP_PROP_FPS, 20)
 
-df = pd.read_csv('resources/3d-annotation.csv')
+# df = pd.read_csv('resources/3d-annotation.csv')
+df = pd.read_csv('resources/bb3d-new-car.csv')
 df = df.fillna('-1')
 
-out = cv2.VideoWriter('output/output-3doverlay.mp4', -1, 20.0, (frameWidth, frameHeight))
+out = cv2.VideoWriter('output/bb3d-new-car.mp4', -1, 20.0, (frameWidth, frameHeight))
 
 def draw_face(img, p):
     for i in range(len(p)):
@@ -37,14 +39,15 @@ while True:
 
     data = df.loc[df['count'] == count]
 
-    if data['points'].iloc[0] == '-1':
-        points = []
-        faces = []
-    else:
-        points = json.loads(data['points'].iloc[0])
-        faces = json.loads(data['faces'].iloc[0])
+    if not data.empty:
+        if data['points'].iloc[0] == '-1':
+            points = []
+            faces = []
+        else:
+            points = json.loads(data['points'].iloc[0])
+            faces = json.loads(data['faces'].iloc[0])
 
-        img = draw_overlay(img, points, faces)
+            img = draw_overlay(img, points, faces)
 
     cv2.imshow("Result", img)
 
