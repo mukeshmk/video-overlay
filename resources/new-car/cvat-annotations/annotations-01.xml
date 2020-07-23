@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>140</id>
+      <name>Mukesh_01_annotation</name>
+      <size>100</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2020-07-23 08:03:57.477860+00:00</created>
+      <updated>2020-07-23 10:15:48.787399+00:00</updated>
+      <start_frame>0</start_frame>
+      <stop_frame>99</stop_frame>
+      <frame_filter></frame_filter>
+      <z_order>False</z_order>
+      <labels>
+        <label>
+          <name>car</name>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>90</id>
+          <start>0</start>
+          <stop>99</stop>
+          <url>http://164.52.200.77:8080/?id=90</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>aryadmin</username>
+        <email>admin@augray.com</email>
+      </owner>
+      <assignee></assignee>
+    </task>
+    <dumped>2020-07-23 10:57:22.673548+00:00</dumped>
+  </meta>
+  <image id="0" name="img-201.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="279.19" ytl1="72.24" xbl1="279.19" ybl1="113.60" xtr1="386.11" ytr1="243.20" xbr1="386.11" ybr1="284.52" xtl2="199.82" ytl2="411.44" xbl2="199.82" ybl2="452.72" xtr2="92.82" ytr2="240.83" xbr2="92.82" ybr2="282.14">
+    </cuboid>
+  </image>
+  <image id="1" name="img-202.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="285.73" ytl1="72.97" xbl1="285.73" ybl1="114.33" xtr1="389.01" ytr1="240.29" xbr1="389.01" ybr1="281.61" xtl2="202.73" ytl2="408.54" xbl2="202.73" ybl2="449.81" xtr2="99.37" ytr2="241.55" xbr2="99.37" ybr2="282.87">
+    </cuboid>
+  </image>
+  <image id="2" name="img-203.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="289.37" ytl1="75.88" xbl1="289.37" ybl1="117.24" xtr1="394.10" ytr1="236.65" xbr1="394.10" ybr1="277.97" xtl2="204.29" ytl2="407.42" xbl2="204.29" ybl2="448.69" xtr2="99.37" ytr2="246.64" xbr2="99.37" ybr2="287.96">
+    </cuboid>
+  </image>
+  <image id="3" name="img-204.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="301.01" ytl1="74.19" xbl1="301.01" ybl1="113.36" xtr1="398.47" ytr1="238.11" xbr1="398.47" ybr1="277.24" xtl2="212.19" ytl2="406.35" xbl2="212.19" ybl2="445.45" xtr2="114.64" ytr2="242.76" xbr2="114.64" ybr2="281.90">
+    </cuboid>
+  </image>
+  <image id="4" name="img-205.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="280.64" ytl1="73.70" xbl1="280.64" ybl1="115.05" xtr1="404.30" ytr1="233.02" xbr1="404.30" ybr1="274.33" xtl2="244.28" ytl2="404.51" xbl2="244.28" ybl2="445.78" xtr2="120.46" ytr2="245.19" xbr2="120.46" ybr2="286.50">
+    </cuboid>
+  </image>
+  <image id="5" name="img-206.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="287.91" ytl1="75.88" xbl1="287.91" ybl1="117.24" xtr1="406.48" ytr1="231.56" xbr1="406.48" ybr1="272.88" xtl2="237.62" ytl2="395.46" xbl2="237.62" ybl2="436.74" xtr2="119.01" ytr2="240.10" xbr2="119.01" ybr2="281.41">
+    </cuboid>
+  </image>
+  <image id="6" name="img-207.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="301.00" ytl1="72.24" xbl1="301.00" ybl1="113.60" xtr1="407.92" ytr1="243.20" xbr1="407.92" ybr1="284.52" xtl2="216.56" ytl2="402.00" xbl2="216.56" ybl2="443.27" xtr2="109.55" ytr2="231.37" xbr2="109.55" ybr2="272.68">
+    </cuboid>
+  </image>
+  <image id="7" name="img-208.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="297.38" ytl1="83.15" xbl1="297.38" ybl1="124.51" xtr1="389.74" ytr1="235.20" xbr1="389.74" ybr1="276.52" xtl2="207.09" ytl2="390.37" xbl2="207.09" ybl2="431.64" xtr2="114.64" ytr2="238.62" xbr2="114.64" ybr2="279.94">
+    </cuboid>
+  </image>
+  <image id="8" name="img-209.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="302.46" ytl1="64.23" xbl1="302.46" ybl1="117.96" xtr1="405.74" ytr1="225.75" xbr1="405.74" ybr1="279.43" xtl2="232.54" ytl2="386.02" xbl2="232.54" ybl2="439.64" xtr2="129.19" ytr2="224.82" xbr2="129.19" ybr2="278.50">
+    </cuboid>
+  </image>
+  <image id="9" name="img-210.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="301.00" ytl1="69.34" xbl1="301.00" ybl1="110.69" xtr1="405.74" ytr1="235.93" xbr1="405.74" ybr1="277.24" xtl2="227.45" ytl2="395.46" xbl2="227.45" ybl2="436.74" xtr2="122.64" ytr2="229.20" xbr2="122.64" ybr2="270.51">
+    </cuboid>
+  </image>
+  <image id="10" name="img-211.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="306.82" ytl1="68.61" xbl1="306.82" ybl1="109.96" xtr1="408.64" ytr1="225.02" xbr1="408.64" ybr1="266.33" xtl2="233.99" ytl2="386.01" xbl2="233.99" ybl2="427.28" xtr2="132.10" ytr2="229.91" xbr2="132.10" ybr2="271.23">
+    </cuboid>
+  </image>
+  <image id="11" name="img-212.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="305.37" ytl1="62.79" xbl1="305.37" ybl1="104.15" xtr1="412.29" ytr1="233.75" xbr1="412.29" ybr1="275.06" xtl2="226.00" ytl2="401.99" xbl2="226.00" ybl2="443.26" xtr2="119.01" ytr2="231.37" xbr2="119.01" ybr2="272.69">
+    </cuboid>
+  </image>
+  <image id="12" name="img-213.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="312.64" ytl1="69.33" xbl1="312.64" ybl1="110.69" xtr1="414.46" ytr1="226.48" xbr1="414.46" ybr1="267.79" xtl2="237.63" ytl2="393.98" xbl2="237.63" ybl2="435.26" xtr2="135.73" ytr2="237.17" xbr2="135.73" ybr2="278.48">
+    </cuboid>
+  </image>
+  <image id="13" name="img-214.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="319.23" ytl1="67.88" xbl1="319.23" ybl1="109.24" xtr1="407.22" ytr1="221.38" xbr1="407.22" ybr1="262.70" xtl2="227.45" ytl2="386.74" xbl2="227.45" ybl2="428.01" xtr2="139.37" ytr2="233.56" xbr2="139.37" ybr2="274.87">
+    </cuboid>
+  </image>
+  <image id="14" name="img-215.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="306.83" ytl1="59.15" xbl1="306.83" ybl1="105.60" xtr1="397.74" ytr1="219.88" xbr1="397.74" ybr1="266.28" xtl2="224.53" ytl2="368.51" xbl2="224.53" ybl2="414.87" xtr2="133.55" ytr2="208.09" xbr2="133.55" ybr2="254.49">
+    </cuboid>
+  </image>
+  <image id="15" name="img-216.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="313.38" ytl1="65.69" xbl1="313.38" ybl1="110.69" xtr1="416.66" ytr1="210.47" xbr1="416.66" ybr1="255.43" xtl2="230.37" ytl2="378.73" xbl2="230.37" ybl2="423.64" xtr2="127.01" ytr2="234.27" xbr2="127.01" ybr2="279.22">
+    </cuboid>
+  </image>
+  <image id="16" name="img-217.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="320.65" ytl1="34.41" xbl1="320.65" ybl1="88.15" xtr1="414.47" ytr1="210.48" xbr1="414.47" ybr1="264.15" xtl2="228.19" ytl2="378.74" xbl2="228.19" ybl2="432.36" xtr2="134.28" ytr2="203.02" xbr2="134.28" ybr2="256.70">
+    </cuboid>
+  </image>
+  <image id="17" name="img-218.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="311.94" ytl1="64.97" xbl1="311.94" ybl1="106.33" xtr1="396.29" ytr1="222.84" xbr1="396.29" ybr1="264.15" xtl2="222.36" ytl2="379.46" xbl2="222.36" ybl2="420.74" xtr2="137.91" ytr2="221.91" xbr2="137.91" ybr2="263.23">
+    </cuboid>
+  </image>
+  <image id="18" name="img-219.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="299.56" ytl1="48.24" xbl1="299.56" ybl1="93.24" xtr1="410.84" ytr1="213.38" xbr1="410.84" ybr1="258.33" xtl2="226.00" ytl2="391.08" xbl2="226.00" ybl2="435.99" xtr2="114.65" ytr2="226.28" xbr2="114.65" ybr2="271.24">
+    </cuboid>
+  </image>
+  <image id="19" name="img-220.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="306.11" ytl1="67.88" xbl1="306.11" ybl1="109.24" xtr1="395.55" ytr1="227.93" xbr1="395.55" ybr1="269.24" xtl2="214.36" ytl2="390.35" xbl2="214.36" ybl2="431.63" xtr2="124.83" ytr2="230.63" xbr2="124.83" ybr2="271.94">
+    </cuboid>
+  </image>
+  <image id="20" name="img-221.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="302.47" ytl1="54.06" xbl1="302.47" ybl1="95.42" xtr1="405.02" ytr1="226.47" xbr1="405.02" ybr1="267.79" xtl2="215.82" ytl2="386.00" xbl2="215.82" ybl2="427.27" xtr2="113.19" ytr2="213.92" xbr2="113.19" ybr2="255.23">
+    </cuboid>
+  </image>
+  <image id="21" name="img-222.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="303.93" ytl1="65.70" xbl1="303.93" ybl1="107.05" xtr1="389.00" ytr1="227.20" xbr1="389.00" ybr1="268.52" xtl2="207.82" ytl2="383.10" xbl2="207.82" ybl2="424.37" xtr2="122.64" ytr2="221.91" xbr2="122.64" ybr2="263.23">
+    </cuboid>
+  </image>
+  <image id="22" name="img-223.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="283.55" ytl1="60.61" xbl1="283.55" ybl1="101.96" xtr1="397.02" ytr1="241.02" xbr1="397.02" ybr1="282.33" xtl2="223.81" ytl2="414.34" xbl2="223.81" ybl2="455.61" xtr2="110.28" ytr2="234.28" xbr2="110.28" ybr2="275.59">
+    </cuboid>
+  </image>
+  <image id="23" name="img-224.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="286.47" ytl1="42.43" xbl1="286.47" ybl1="83.78" xtr1="389.02" ytr1="211.93" xbr1="389.02" ybr1="253.24" xtl2="205.63" ytl2="409.25" xbl2="205.63" ybl2="450.53" xtr2="103.00" ytr2="240.12" xbr2="103.00" ybr2="281.43">
+    </cuboid>
+  </image>
+  <image id="24" name="img-225.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="285.73" ytl1="54.93" xbl1="285.73" ybl1="96.28" xtr1="389.74" ytr1="217.02" xbr1="389.74" ybr1="258.33" xtl2="207.09" ytl2="396.90" xbl2="207.09" ybl2="438.17" xtr2="103.01" ytr2="235.14" xbr2="103.01" ybr2="276.45">
+    </cuboid>
+  </image>
+  <image id="25" name="img-226.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="282.12" ytl1="58.43" xbl1="282.12" ybl1="99.78" xtr1="376.66" ytr1="220.66" xbr1="376.66" ybr1="261.97" xtl2="200.54" ytl2="386.73" xbl2="200.54" ybl2="428.00" xtr2="105.92" ytr2="224.83" xbr2="105.92" ybr2="266.14">
+    </cuboid>
+  </image>
+  <image id="26" name="img-227.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="287.20" ytl1="51.88" xbl1="287.20" ybl1="93.24" xtr1="389.02" ytr1="217.75" xbr1="389.02" ybr1="259.06" xtl2="211.45" ytl2="396.17" xbl2="211.45" ybl2="437.45" xtr2="109.55" ytr2="230.65" xbr2="109.55" ybr2="271.97">
+    </cuboid>
+  </image>
+  <image id="27" name="img-228.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="279.19" ytl1="48.97" xbl1="279.19" ybl1="90.33" xtr1="386.12" ytr1="223.43" xbr1="386.12" ybr1="264.75" xtl2="214.35" ytl2="399.70" xbl2="214.35" ybl2="440.97" xtr2="107.37" ytr2="225.57" xbr2="107.37" ybr2="266.89">
+    </cuboid>
+  </image>
+  <image id="28" name="img-229.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="280.64" ytl1="58.43" xbl1="280.64" ybl1="99.78" xtr1="405.75" ytr1="236.75" xbr1="405.75" ybr1="278.06" xtl2="212.20" ytl2="401.34" xbl2="212.20" ybl2="442.61" xtr2="87.01" ytr2="223.37" xbr2="87.01" ybr2="264.68">
+    </cuboid>
+  </image>
+  <image id="29" name="img-230.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="288.65" ytl1="48.24" xbl1="288.65" ybl1="89.60" xtr1="389.74" ytr1="219.20" xbr1="389.74" ybr1="260.52" xtl2="215.81" ytl2="396.16" xbl2="215.81" ybl2="437.44" xtr2="114.64" ytr2="225.55" xbr2="114.64" ybr2="266.87">
+    </cuboid>
+  </image>
+  <image id="30" name="img-231.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="278.46" ytl1="54.06" xbl1="278.46" ybl1="98.33" xtr1="389.75" ytr1="198.11" xbr1="389.75" ybr1="242.33" xtl2="220.17" ytl2="393.26" xbl2="220.17" ybl2="437.44" xtr2="108.82" ytr2="249.55" xbr2="108.82" ybr2="293.77">
+    </cuboid>
+  </image>
+  <image id="31" name="img-232.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="279.92" ytl1="54.79" xbl1="279.92" ybl1="96.14" xtr1="390.48" ytr1="212.66" xbr1="390.48" ybr1="253.97" xtl2="225.98" ytl2="396.19" xbl2="225.98" ybl2="437.46" xtr2="115.37" ytr2="238.66" xbr2="115.37" ybr2="279.97">
+    </cuboid>
+  </image>
+  <image id="32" name="img-233.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="287.91" ytl1="59.88" xbl1="287.91" ybl1="101.24" xtr1="407.21" ytr1="217.02" xbr1="407.21" ybr1="258.33" xtl2="228.18" ytl2="404.17" xbl2="228.18" ybl2="445.45" xtr2="108.82" ytr2="247.38" xbr2="108.82" ybr2="288.69">
+    </cuboid>
+  </image>
+  <image id="33" name="img-234.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="291.56" ytl1="59.15" xbl1="291.56" ybl1="100.51" xtr1="389.74" ytr1="217.75" xbr1="389.74" ybr1="259.06" xtl2="217.26" ytl2="404.16" xbl2="217.26" ybl2="445.43" xtr2="119.00" ytr2="245.91" xbr2="119.00" ybr2="287.22">
+    </cuboid>
+  </image>
+  <image id="34" name="img-235.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="287.19" ytl1="70.79" xbl1="287.19" ybl1="112.14" xtr1="397.02" ytr1="232.29" xbr1="397.02" ybr1="273.61" xtl2="232.52" ytl2="396.91" xbl2="232.52" ybl2="438.19" xtr2="122.64" ytr2="235.74" xbr2="122.64" ybr2="277.05">
+    </cuboid>
+  </image>
+  <image id="35" name="img-236.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="285.00" ytl1="77.33" xbl1="285.00" ybl1="118.69" xtr1="389.74" ytr1="221.38" xbr1="389.74" ybr1="262.70" xtl2="233.25" ytl2="409.26" xbl2="233.25" ybl2="450.54" xtr2="128.46" ytr2="265.55" xbr2="128.46" ybr2="306.86">
+    </cuboid>
+  </image>
+  <image id="36" name="img-237.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="285.02" ytl1="78.79" xbl1="285.02" ybl1="120.14" xtr1="395.58" ytr1="230.11" xbr1="395.58" ybr1="271.42" xtl2="232.53" ytl2="407.81" xbl2="232.53" ybl2="449.08" xtr2="121.92" ytr2="256.82" xbr2="121.92" ybr2="298.13">
+    </cuboid>
+  </image>
+  <image id="37" name="img-238.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="282.83" ytl1="75.15" xbl1="282.83" ybl1="119.42" xtr1="388.29" ytr1="214.11" xbr1="388.29" ybr1="258.33" xtl2="241.97" ytl2="402.00" xbl2="241.97" ybl2="446.18" xtr2="136.46" ytr2="263.37" xbr2="136.46" ybr2="307.59">
+    </cuboid>
+  </image>
+  <image id="38" name="img-239.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="271.19" ytl1="74.42" xbl1="271.19" ybl1="115.78" xtr1="400.68" ytr1="213.38" xbr1="400.68" ybr1="254.70" xtl2="245.61" ytl2="410.71" xbl2="245.61" ybl2="451.98" xtr2="116.10" ytr2="272.08" xbr2="116.10" ybr2="313.40">
+    </cuboid>
+  </image>
+  <image id="39" name="img-240.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="271.17" ytl1="87.52" xbl1="271.17" ybl1="128.87" xtr1="399.93" ytr1="230.84" xbr1="399.93" ybr1="272.15" xtl2="241.25" ytl2="414.35" xbl2="241.25" ybl2="455.62" xtr2="112.47" ytr2="271.35" xbr2="112.47" ybr2="312.67">
+    </cuboid>
+  </image>
+  <image id="40" name="img-241.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="271.18" ytl1="85.33" xbl1="271.18" ybl1="126.69" xtr1="376.64" ytr1="219.20" xbr1="376.64" ybr1="260.52" xtl2="218.70" ytl2="415.80" xbl2="218.70" ybl2="457.08" xtr2="113.19" ytr2="282.27" xbr2="113.19" ybr2="323.58">
+    </cuboid>
+  </image>
+  <image id="41" name="img-242.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="273.36" ytl1="91.88" xbl1="273.36" ybl1="133.24" xtr1="384.65" ytr1="209.75" xbr1="384.65" ybr1="251.06" xtl2="230.33" ytl2="401.27" xbl2="230.33" ybl2="442.55" xtr2="119.00" ytr2="283.72" xbr2="119.00" ybr2="325.03">
+    </cuboid>
+  </image>
+  <image id="42" name="img-243.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="274.82" ytl1="93.33" xbl1="274.82" ybl1="134.69" xtr1="381.74" ytr1="235.93" xbr1="381.74" ybr1="277.24" xtl2="225.25" ytl2="415.80" xbl2="225.25" ybl2="457.07" xtr2="118.28" ytr2="273.53" xbr2="118.28" ybr2="314.84">
+    </cuboid>
+  </image>
+  <image id="43" name="img-244.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="264.64" ytl1="91.15" xbl1="264.64" ybl1="132.51" xtr1="379.56" ytr1="218.47" xbr1="379.56" ybr1="259.79" xtl2="230.33" ytl2="412.92" xbl2="230.33" ybl2="454.19" xtr2="115.37" ytr2="285.92" xbr2="115.37" ybr2="327.23">
+    </cuboid>
+  </image>
+  <image id="44" name="img-245.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="263.17" ytl1="89.70" xbl1="263.17" ybl1="131.05" xtr1="386.11" ytr1="214.11" xbr1="386.11" ybr1="255.42" xtl2="241.24" ytl2="409.27" xbl2="241.24" ybl2="450.54" xtr2="118.28" ytr2="285.17" xbr2="118.28" ybr2="326.49">
+    </cuboid>
+  </image>
+  <image id="45" name="img-246.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="258.11" ytl1="94.79" xbl1="258.11" ybl1="136.15" xtr1="373.03" ytr1="225.02" xbr1="373.03" ybr1="266.34" xtl2="230.33" ytl2="427.45" xbl2="230.33" ybl2="468.73" xtr2="115.37" ytr2="297.56" xbr2="115.37" ybr2="338.87">
+    </cuboid>
+  </image>
+  <image id="46" name="img-247.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="259.55" ytl1="88.97" xbl1="259.55" ybl1="130.33" xtr1="376.66" ytr1="220.66" xbr1="376.66" ybr1="261.97" xtl2="233.23" ytl2="415.08" xbl2="233.23" ybl2="456.36" xtr2="116.10" ytr2="283.72" xbr2="116.10" ybr2="325.04">
+    </cuboid>
+  </image>
+  <image id="47" name="img-248.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="262.44" ytl1="88.97" xbl1="262.44" ybl1="130.33" xtr1="384.65" ytr1="214.84" xbr1="384.65" ybr1="256.15" xtl2="236.15" ytl2="402.00" xbl2="236.15" ybl2="443.27" xtr2="113.91" ytr2="276.44" xbr2="113.91" ybr2="317.76">
+    </cuboid>
+  </image>
+  <image id="48" name="img-249.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="261.73" ytl1="85.33" xbl1="261.73" ybl1="126.69" xtr1="376.65" ytr1="213.38" xbr1="376.65" ybr1="254.70" xtl2="229.60" ytl2="427.44" xbl2="229.60" ybl2="468.71" xtr2="114.64" ytr2="299.73" xbr2="114.64" ybr2="341.04">
+    </cuboid>
+  </image>
+  <image id="49" name="img-250.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="252.29" ytl1="86.79" xbl1="252.29" ybl1="128.14" xtr1="370.86" ytr1="210.47" xbr1="370.86" ybr1="251.79" xtl2="229.60" ytl2="412.92" xbl2="229.60" ybl2="454.19" xtr2="111.01" ytr2="289.56" xbr2="111.01" ybr2="330.87">
+    </cuboid>
+  </image>
+  <image id="50" name="img-251.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="240.64" ytl1="99.88" xbl1="240.64" ybl1="141.24" xtr1="368.67" ytr1="230.84" xbr1="368.67" ybr1="272.15" xtl2="244.12" ytl2="415.82" xbl2="244.12" ybl2="457.10" xtr2="116.10" ytr2="285.18" xbr2="116.10" ybr2="326.50">
+    </cuboid>
+  </image>
+  <image id="51" name="img-252.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="246.46" ytl1="88.24" xbl1="246.46" ybl1="129.60" xtr1="367.21" ytr1="205.38" xbr1="367.21" ybr1="246.70" xtl2="228.87" ytl2="412.17" xbl2="228.87" ybl2="453.45" xtr2="108.10" ytr2="295.36" xbr2="108.10" ybr2="336.67">
+    </cuboid>
+  </image>
+  <image id="52" name="img-253.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="242.79" ytl1="94.79" xbl1="242.79" ybl1="136.15" xtr1="388.29" ytr1="190.84" xbr1="388.29" ybr1="232.15" xtl2="249.96" ytl2="406.36" xbl2="249.96" ybl2="447.63" xtr2="104.46" ytr2="310.62" xbr2="104.46" ybr2="351.94">
+    </cuboid>
+  </image>
+  <image id="53" name="img-254.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="254.46" ytl1="80.97" xbl1="254.46" ybl1="122.33" xtr1="380.30" ytr1="203.20" xbr1="380.30" ybr1="244.52" xtl2="233.96" ytl2="384.57" xbl2="233.96" ybl2="425.84" xtr2="108.10" ytr2="262.64" xbr2="108.10" ybr2="303.96">
+    </cuboid>
+  </image>
+  <image id="54" name="img-255.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="250.82" ytl1="82.43" xbl1="250.82" ybl1="123.78" xtr1="383.22" ytr1="185.02" xbr1="383.22" ybr1="226.33" xtl2="238.33" ytl2="380.21" xbl2="238.33" ybl2="421.49" xtr2="105.92" ytr2="277.92" xbr2="105.92" ybr2="319.23">
+    </cuboid>
+  </image>
+  <image id="55" name="img-256.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="244.28" ytl1="75.88" xbl1="244.28" ybl1="117.24" xtr1="370.13" ytr1="186.47" xbr1="370.13" ybr1="227.79" xtl2="251.39" ytl2="376.58" xbl2="251.39" ybl2="417.85" xtr2="125.55" ytr2="266.28" xbr2="125.55" ybr2="307.60">
+    </cuboid>
+  </image>
+  <image id="56" name="img-257.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="252.26" ytl1="68.61" xbl1="252.26" ybl1="109.96" xtr1="381.02" ytr1="183.57" xbr1="381.02" ybr1="224.88" xtl2="249.95" ytl2="388.93" xbl2="249.95" ybl2="430.21" xtr2="121.18" ytr2="274.30" xbr2="121.18" ybr2="315.61">
+    </cuboid>
+  </image>
+  <image id="57" name="img-258.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="244.28" ytl1="65.70" xbl1="244.28" ybl1="107.05" xtr1="373.77" ytr1="177.75" xbr1="373.77" ybr1="219.06" xtl2="259.39" ytl2="385.28" xbl2="259.39" ybl2="426.56" xtr2="129.91" ytr2="273.56" xbr2="129.91" ybr2="314.87">
+    </cuboid>
+  </image>
+  <image id="58" name="img-259.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="259.55" ytl1="54.06" xbl1="259.55" ybl1="95.42" xtr1="381.03" ytr1="158.11" xbr1="381.03" ybr1="199.42" xtl2="246.32" ytl2="364.93" xbl2="246.32" ybl2="406.20" xtr2="124.82" ytr2="261.19" xbr2="124.82" ybr2="302.50">
+    </cuboid>
+  </image>
+  <image id="59" name="img-260.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="255.89" ytl1="45.33" xbl1="255.89" ybl1="86.69" xtr1="378.10" ytr1="155.93" xbr1="378.10" ybr1="197.24" xtl2="246.31" ytl2="367.85" xbl2="246.31" ybl2="409.12" xtr2="124.10" ytr2="257.58" xbr2="124.10" ybr2="298.89">
+    </cuboid>
+  </image>
+  <image id="60" name="img-261.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="250.09" ytl1="48.24" xbl1="250.09" ybl1="89.60" xtr1="378.13" ytr1="169.75" xbr1="378.13" ybr1="211.06" xtl2="253.58" ytl2="370.02" xbl2="253.58" ybl2="411.30" xtr2="125.55" ytr2="248.84" xbr2="125.55" ybr2="290.16">
+    </cuboid>
+  </image>
+  <image id="61" name="img-262.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="254.45" ytl1="43.88" xbl1="254.45" ybl1="85.24" xtr1="371.56" ytr1="168.29" xbr1="371.56" ybr1="209.61" xtl2="250.66" ytl2="378.75" xbl2="250.66" ybl2="420.03" xtr2="133.55" ytr2="254.67" xbr2="133.55" ybr2="295.99">
+    </cuboid>
+  </image>
+  <image id="62" name="img-263.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="260.26" ytl1="50.43" xbl1="260.26" ybl1="91.78" xtr1="382.47" ytr1="154.47" xbr1="382.47" ybr1="195.79" xtl2="247.04" ytl2="377.28" xbl2="247.04" ybl2="418.55" xtr2="124.82" ytr2="273.56" xbr2="124.82" ybr2="314.87">
+    </cuboid>
+  </image>
+  <image id="63" name="img-264.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="250.79" ytl1="48.97" xbl1="250.79" ybl1="90.33" xtr1="386.11" ytr1="147.20" xbr1="386.11" ybr1="188.52" xtl2="261.58" ytl2="372.94" xbl2="261.58" ybl2="414.21" xtr2="126.28" ytr2="275.03" xbr2="126.28" ybr2="316.35">
+    </cuboid>
+  </image>
+  <image id="64" name="img-265.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="253.71" ytl1="49.32" xbl1="253.71" ybl1="92.13" xtr1="382.47" ytr1="181.38" xbr1="382.47" ybr1="224.15" xtl2="242.69" ytl2="386.01" xbl2="242.69" ybl2="428.74" xtr2="113.92" ytr2="254.29" xbr2="113.92" ybr2="297.06">
+    </cuboid>
+  </image>
+  <image id="65" name="img-266.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="250.07" ytl1="48.97" xbl1="250.07" ybl1="90.33" xtr1="379.55" ytr1="142.84" xbr1="379.55" ybr1="184.15" xtl2="261.57" ytl2="356.22" xbl2="261.57" ybl2="397.50" xtr2="132.10" ytr2="262.67" xbr2="132.10" ybr2="303.98">
+    </cuboid>
+  </image>
+  <image id="66" name="img-267.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="242.77" ytl1="40.97" xbl1="242.77" ybl1="82.33" xtr1="377.35" ytr1="158.11" xbr1="377.35" ybr1="199.42" xtl2="257.94" ytl2="380.90" xbl2="257.94" ybl2="422.17" xtr2="123.37" ytr2="264.10" xbr2="123.37" ybr2="305.41">
+    </cuboid>
+  </image>
+  <image id="67" name="img-268.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="239.16" ytl1="50.43" xbl1="239.16" ybl1="91.78" xtr1="370.10" ytr1="150.84" xbr1="370.10" ybr1="192.15" xtl2="249.21" ytl2="377.28" xbl2="249.21" ybl2="418.55" xtr2="118.28" ytr2="277.19" xbr2="118.28" ybr2="318.51">
+    </cuboid>
+  </image>
+  <image id="68" name="img-269.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="242.07" ytl1="49.70" xbl1="242.07" ybl1="91.05" xtr1="366.46" ytr1="162.47" xbr1="366.46" ybr1="203.79" xtl2="247.03" ytl2="356.97" xbl2="247.03" ybl2="398.24" xtr2="122.65" ytr2="244.50" xbr2="122.65" ybr2="285.82">
+    </cuboid>
+  </image>
+  <image id="69" name="img-270.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="239.15" ytl1="47.52" xbl1="239.15" ybl1="88.87" xtr1="363.54" ytr1="148.66" xbr1="363.54" ybr1="189.97" xtl2="242.67" ytl2="367.85" xbl2="242.67" ybl2="409.12" xtr2="118.28" ytr2="267.03" xbr2="118.28" ybr2="308.35">
+    </cuboid>
+  </image>
+  <image id="70" name="img-271.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="225.31" ytl1="56.97" xbl1="225.31" ybl1="98.33" xtr1="359.90" ytr1="147.20" xbr1="359.90" ybr1="188.52" xtl2="255.01" ytl2="366.40" xbl2="255.01" ybl2="407.67" xtr2="120.46" ytr2="276.48" xbr2="120.46" ybr2="317.79">
+    </cuboid>
+  </image>
+  <image id="71" name="img-272.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="231.14" ytl1="58.43" xbl1="231.14" ybl1="99.78" xtr1="370.09" ytr1="163.93" xbr1="370.09" ybr1="205.24" xtl2="254.30" ytl2="375.12" xbl2="254.30" ybl2="416.39" xtr2="115.37" ytr2="269.93" xbr2="115.37" ybr2="311.25">
+    </cuboid>
+  </image>
+  <image id="72" name="img-273.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="226.80" ytl1="59.15" xbl1="226.80" ybl1="100.51" xtr1="369.39" ytr1="156.66" xbr1="369.39" ybr1="197.97" xtl2="249.21" ytl2="370.73" xbl2="249.21" ybl2="412.01" xtr2="106.65" ytr2="273.54" xbr2="106.65" ybr2="314.86">
+    </cuboid>
+  </image>
+  <image id="73" name="img-274.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="236.24" ytl1="67.88" xbl1="236.24" ybl1="109.23" xtr1="389.75" ytr1="184.29" xbr1="389.75" ybr1="225.61" xtl2="234.70" ytl2="368.58" xbl2="234.70" ybl2="409.85" xtr2="81.19" ytr2="252.46" xbr2="81.19" ybr2="293.78">
+    </cuboid>
+  </image>
+  <image id="74" name="img-275.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="226.04" ytl1="65.70" xbl1="226.04" ybl1="107.05" xtr1="369.36" ytr1="161.75" xbr1="369.36" ybr1="203.06" xtl2="241.22" ytl2="369.30" xbl2="241.22" ybl2="410.58" xtr2="97.91" ytr2="273.56" xbr2="97.91" ybr2="314.87">
+    </cuboid>
+  </image>
+  <image id="75" name="img-276.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="234.05" ytl1="75.88" xbl1="234.05" ybl1="117.24" xtr1="361.35" ytr1="184.29" xbr1="361.35" ybr1="225.61" xtl2="231.04" ytl2="388.93" xbl2="231.04" ybl2="430.20" xtr2="103.73" ytr2="280.83" xbr2="103.73" ybr2="322.14">
+    </cuboid>
+  </image>
+  <image id="76" name="img-277.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="229.00" ytl1="68.61" xbl1="229.00" ybl1="109.96" xtr1="365.76" ytr1="169.75" xbr1="365.76" ybr1="211.06" xtl2="236.13" ytl2="378.02" xbl2="236.13" ybl2="419.30" xtr2="99.37" ytr2="277.19" xbr2="99.37" ybr2="318.50">
+    </cuboid>
+  </image>
+  <image id="77" name="img-278.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="223.87" ytl1="80.24" xbl1="223.87" ybl1="121.60" xtr1="351.90" ytr1="187.20" xbr1="351.90" ybr1="228.52" xtl2="241.20" ytl2="394.03" xbl2="241.20" ybl2="435.31" xtr2="113.19" ytr2="287.39" xbr2="113.19" ybr2="328.70">
+    </cuboid>
+  </image>
+  <image id="78" name="img-279.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="223.87" ytl1="77.33" xbl1="223.87" ybl1="118.69" xtr1="362.13" ytr1="158.23" xbr1="362.13" ybr1="199.55" xtl2="247.76" ytl2="383.99" xbl2="247.76" ybl2="425.27" xtr2="109.55" ytr2="303.36" xbr2="109.55" ybr2="344.67">
+    </cuboid>
+  </image>
+  <image id="79" name="img-280.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="221.67" ytl1="74.43" xbl1="221.67" ybl1="115.78" xtr1="373.00" ytr1="163.93" xbr1="373.00" ybr1="205.24" xtl2="252.84" ytl2="388.92" xbl2="252.84" ybl2="430.19" xtr2="101.55" ytr2="299.73" xbr2="101.55" ybr2="341.05">
+    </cuboid>
+  </image>
+  <image id="80" name="img-281.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="214.41" ytl1="87.52" xbl1="214.41" ybl1="128.87" xtr1="366.46" ytr1="158.11" xbr1="366.46" ybr1="199.42" xtl2="265.92" ytl2="388.93" xbl2="265.92" ybl2="430.20" xtr2="113.92" ytr2="318.63" xbr2="113.92" ybr2="359.95">
+    </cuboid>
+  </image>
+  <image id="81" name="img-282.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="228.96" ytl1="73.70" xbl1="228.96" ybl1="115.05" xtr1="378.10" ytr1="171.20" xbr1="378.10" ybr1="212.52" xtl2="252.85" ytl2="398.37" xbl2="252.85" ybl2="439.64" xtr2="103.74" ytr2="301.19" xbr2="103.74" ybr2="342.50">
+    </cuboid>
+  </image>
+  <image id="82" name="img-283.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="222.40" ytl1="83.15" xbl1="222.40" ybl1="124.51" xtr1="365.72" ytr1="178.48" xbr1="365.72" ybr1="219.79" xtl2="253.57" ytl2="395.46" xbl2="253.57" ybl2="436.73" xtr2="110.28" ytr2="300.45" xbr2="110.28" ybr2="341.76">
+    </cuboid>
+  </image>
+  <image id="83" name="img-284.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="234.05" ytl1="72.97" xbl1="234.05" ybl1="114.33" xtr1="366.45" ytr1="187.93" xbr1="366.45" ybr1="229.24" xtl2="245.57" ytl2="396.19" xbl2="245.57" ybl2="437.46" xtr2="113.19" ytr2="281.55" xbr2="113.19" ybr2="322.86">
+    </cuboid>
+  </image>
+  <image id="84" name="img-285.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="217.33" ytl1="82.43" xbl1="217.33" ybl1="123.78" xtr1="360.65" ytr1="158.84" xbr1="360.65" ybr1="200.15" xtl2="253.56" ytl2="404.17" xbl2="253.56" ybl2="445.45" xtr2="110.28" ytr2="328.08" xbr2="110.28" ybr2="369.40">
+    </cuboid>
+  </image>
+  <image id="85" name="img-286.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="223.86" ytl1="91.88" xbl1="223.86" ybl1="133.24" xtr1="375.91" ytr1="161.02" xbr1="375.91" ybr1="202.34" xtl2="258.67" ytl2="391.10" xbl2="258.67" ybl2="432.38" xtr2="106.65" ytr2="322.26" xbr2="106.65" ybr2="363.58">
+    </cuboid>
+  </image>
+  <image id="86" name="img-287.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="223.86" ytl1="75.88" xbl1="223.86" ybl1="117.24" xtr1="378.10" ytr1="182.84" xbr1="378.10" ybr1="224.15" xtl2="265.93" ytl2="401.27" xbl2="265.93" ybl2="442.54" xtr2="111.74" ytr2="294.64" xbr2="111.74" ybr2="335.95">
+    </cuboid>
+  </image>
+  <image id="87" name="img-288.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="230.41" ytl1="83.88" xbl1="230.41" ybl1="125.24" xtr1="370.09" ytr1="169.75" xbr1="370.09" ybr1="211.06" xtl2="249.21" ytl2="397.64" xbl2="249.21" ybl2="438.91" xtr2="109.55" ytr2="312.09" xbr2="109.55" ybr2="353.40">
+    </cuboid>
+  </image>
+  <image id="88" name="img-289.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="219.50" ytl1="103.52" xbl1="219.50" ybl1="144.87" xtr1="383.93" ytr1="182.84" xbr1="383.93" ybr1="224.15" xtl2="273.20" ytl2="396.95" xbl2="273.20" ybl2="438.22" xtr2="108.83" ytr2="317.92" xbr2="108.83" ybr2="359.24">
+    </cuboid>
+  </image>
+  <image id="89" name="img-290.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="236.24" ytl1="82.43" xbl1="236.24" ybl1="123.78" xtr1="378.10" ytr1="184.29" xbr1="378.10" ybr1="225.61" xtl2="250.67" ytl2="410.00" xbl2="250.67" ybl2="451.27" xtr2="108.82" ytr2="308.46" xbr2="108.82" ybr2="349.77">
+    </cuboid>
+  </image>
+  <image id="90" name="img-291.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="239.88" ytl1="70.79" xbl1="239.88" ybl1="112.14" xtr1="366.46" ytr1="190.84" xbr1="366.46" ybr1="232.15" xtl2="245.57" ytl2="404.19" xbl2="245.57" ybl2="445.46" xtr2="119.00" ytr2="284.48" xbr2="119.00" ybr2="325.79">
+    </cuboid>
+  </image>
+  <image id="91" name="img-292.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="234.78" ytl1="71.52" xbl1="234.78" ybl1="112.87" xtr1="375.91" ytr1="173.38" xbr1="375.91" ybr1="214.70" xtl2="263.02" ytl2="392.56" xbl2="263.02" ybl2="433.84" xtr2="121.91" ytr2="291.02" xbr2="121.91" ybr2="332.33">
+    </cuboid>
+  </image>
+  <image id="92" name="img-293.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="232.59" ytl1="72.24" xbl1="232.59" ybl1="113.60" xtr1="378.10" ytr1="158.11" xbr1="378.10" ybr1="199.42" xtl2="259.39" ytl2="392.56" xbl2="259.39" ybl2="433.84" xtr2="113.91" ytr2="307.02" xbr2="113.91" ybr2="348.33">
+    </cuboid>
+  </image>
+  <image id="93" name="img-294.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="233.32" ytl1="61.33" xbl1="233.32" ybl1="102.69" xtr1="387.56" ytr1="151.57" xbr1="387.56" ybr1="192.88" xtl2="253.59" ytl2="388.19" xbl2="253.59" ybl2="429.46" xtr2="99.37" ytr2="298.28" xbr2="99.37" ybr2="339.60">
+    </cuboid>
+  </image>
+  <image id="94" name="img-295.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="231.16" ytl1="57.70" xbl1="231.16" ybl1="99.06" xtr1="388.31" ytr1="149.38" xbr1="388.31" ybr1="190.70" xtl2="265.21" ytl2="376.60" xbl2="265.21" ybl2="417.87" xtr2="108.10" ytr2="285.24" xbr2="108.10" ybr2="326.55">
+    </cuboid>
+  </image>
+  <image id="95" name="img-296.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="223.13" ytl1="61.34" xbl1="223.13" ybl1="102.69" xtr1="375.91" ytr1="147.20" xbr1="375.91" ybr1="188.52" xtl2="274.65" ytl2="382.38" xbl2="274.65" ybl2="423.66" xtr2="121.92" ytr2="296.84" xbr2="121.92" ybr2="338.15">
+    </cuboid>
+  </image>
+  <image id="96" name="img-297.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="224.59" ytl1="59.88" xbl1="224.59" ybl1="101.24" xtr1="378.10" ytr1="135.56" xbr1="378.10" ybr1="176.88" xtl2="265.20" ytl2="387.46" xbl2="265.20" ybl2="428.74" xtr2="111.73" ytr2="312.11" xbr2="111.73" ybr2="353.42">
+    </cuboid>
+  </image>
+  <image id="97" name="img-298.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="226.05" ytl1="51.88" xbl1="226.05" ybl1="93.23" xtr1="381.74" ytr1="158.84" xbr1="381.74" ybr1="200.15" xtl2="259.39" ytl2="409.26" xbl2="259.39" ybl2="450.54" xtr2="103.74" ytr2="302.66" xbr2="103.74" ybr2="343.98">
+    </cuboid>
+  </image>
+  <image id="98" name="img-299.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="230.40" ytl1="48.24" xbl1="230.40" ybl1="89.60" xtr1="375.18" ytr1="155.93" xbr1="375.18" ybr1="197.24" xtl2="262.29" ytl2="382.37" xbl2="262.29" ybl2="423.65" xtr2="117.55" ytr2="275.02" xbr2="117.55" ybr2="316.34">
+    </cuboid>
+  </image>
+  <image id="99" name="img-300.jpg" width="640" height="480">
+    <cuboid label="car" occluded="0" xtl1="234.78" ytl1="55.52" xbl1="234.78" ybl1="96.87" xtr1="377.37" ytr1="158.84" xbr1="377.37" ybr1="200.15" xtl2="255.03" ytl2="378.02" xbl2="255.03" ybl2="419.29" xtr2="112.46" ytr2="275.02" xbr2="112.46" ybr2="316.34">
+    </cuboid>
+  </image>
+</annotations>
