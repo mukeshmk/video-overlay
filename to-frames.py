@@ -7,7 +7,7 @@ frameWidth = 640
 frameHeight = 480
 
 # cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
-cap = cv2.VideoCapture("resources/sample_toy_car.mp4")
+cap = cv2.VideoCapture("resources/new-car/sample_toy_car.mp4")
 cap.set(cv2.CAP_PROP_FPS, 20)
 
 def saveImg(count, img):
@@ -26,7 +26,7 @@ while True:
     
     cv2.imshow("Result", img)
     
-    if cv2.waitKey(1) == ord('q') or count > 200:
+    if cv2.waitKey(1) == ord('q') or count > 600:
          break
     count+=1
 

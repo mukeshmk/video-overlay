@@ -8,12 +8,12 @@ frameHeight = 480
 
 # cap = cv2.VideoCapture("resources/object_detect_test_vid.mp4")
 # link to the video: https://arlive.us/hackathon-2020/sample_toy_car.mp4
-cap = cv2.VideoCapture("resources/sample_toy_car.mp4")
+cap = cv2.VideoCapture("resources/new-car/sample_toy_car.mp4")
 
 cap.set(cv2.CAP_PROP_FPS, 20)
 
 # df = pd.read_csv('resources/required-data.csv')
-df = pd.read_csv('resources/new-car.csv')
+df = pd.read_csv('resources/new-car/new-car.csv')
 
 # out = cv2.VideoWriter('output/output.mp4', -1, 20.0, (frameWidth, frameHeight))
 out = cv2.VideoWriter('output/output-polyline-new-car.mp4', -1, 20.0, (frameWidth, frameHeight))
