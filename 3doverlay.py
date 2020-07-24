@@ -58,7 +58,7 @@ while True:
 
     out.write(img)
 
-    if cv2.waitKey(1) == ord('q') or count + 2 > 600:
+    if cv2.waitKey(1) == ord('q'):
         break
     count+=1
 
