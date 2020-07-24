@@ -13,7 +13,10 @@ cap = cv2.VideoCapture("resources/new-car/sample_toy_car.mp4")
 cap.set(cv2.CAP_PROP_FPS, 20)
 
 # df = pd.read_csv('resources/required-data.csv')
-df = pd.read_csv('resources/new-car/new-car.csv')
+df1 = pd.read_csv('resources/new-car/new-car.csv')
+df2 = pd.read_csv('resources/new-car/cvat-polyline-annotation.csv')
+
+df = pd.concat([df1,df2],axis=0).reset_index(drop=True)
 
 # out = cv2.VideoWriter('output/output.mp4', -1, 20.0, (frameWidth, frameHeight))
 out = cv2.VideoWriter('output/output-polyline-new-car.mp4', -1, 20.0, (frameWidth, frameHeight))
@@ -44,7 +47,7 @@ while True:
 
     out.write(img)
     
-    if cv2.waitKey(1) == ord('q') or count + 2 > 300:
+    if cv2.waitKey(1) == ord('q'):
          break
     count+=1
 
