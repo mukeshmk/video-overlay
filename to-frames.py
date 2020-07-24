@@ -26,7 +26,7 @@ while True:
     
     cv2.imshow("Result", img)
     
-    if cv2.waitKey(1) == ord('q') or count > 600:
+    if cv2.waitKey(1) == ord('q'):
          break
     count+=1
 

@@ -19,14 +19,16 @@ def format_data(data, itemlist, imagenamelist):
     for item, image in zip(itemlist, imagenamelist):
         count = int(image.attributes['name'].value.replace('img-', '').replace('images', '').replace('.jpg', ''))
 
-        points = [[int(float(item.attributes['xbr2'].value)), int(float(item.attributes['ybr2'].value))], 
-            [int(float(item.attributes['xtr2'].value)), int(float(item.attributes['ytr2'].value))], 
-            [int(float(item.attributes['xbl2'].value)), int(float(item.attributes['ybl2'].value))], 
-            [int(float(item.attributes['xtl2'].value)), int(float(item.attributes['ytl2'].value))], 
-            [int(float(item.attributes['xbr1'].value)), int(float(item.attributes['ybr1'].value))], 
-            [int(float(item.attributes['xtr1'].value)), int(float(item.attributes['ytr1'].value))], 
-            [int(float(item.attributes['xbl1'].value)), int(float(item.attributes['ybl1'].value))], 
-            [int(float(item.attributes['xtl1'].value)), int(float(item.attributes['ytl1'].value))]]
+        points = [
+            [int(float(item.attributes['xbr2'].value)), int(float(item.attributes['ybr2'].value))], #0
+            [int(float(item.attributes['xtr2'].value)), int(float(item.attributes['ytr2'].value))], #1
+            [int(float(item.attributes['xbl2'].value)), int(float(item.attributes['ybl2'].value))], #2
+            [int(float(item.attributes['xtl2'].value)), int(float(item.attributes['ytl2'].value))], #3
+            [int(float(item.attributes['xbr1'].value)), int(float(item.attributes['ybr1'].value))], #4
+            [int(float(item.attributes['xtr1'].value)), int(float(item.attributes['ytr1'].value))], #5
+            [int(float(item.attributes['xbl1'].value)), int(float(item.attributes['ybl1'].value))], #6
+            [int(float(item.attributes['xtl1'].value)), int(float(item.attributes['ytl1'].value))]  #7
+            ]
 
         data['count'].append(count)
         data['faces'].append(json.dumps(faces))
@@ -37,7 +39,7 @@ def format_data(data, itemlist, imagenamelist):
 if not len(imagenamelist) == len(itemlist):
     print('length miss match check XML file!')
 else:
-    faces = [[0, 1, 2, 3], [0, 4, 5, 1], [1, 5, 6, 2]]
+    faces = [[0, 1, 3, 2], [0, 1, 7, 6], [2, 3, 5, 4], [4, 5, 7, 6]]
 
     data = {}
     data['count'] = []
