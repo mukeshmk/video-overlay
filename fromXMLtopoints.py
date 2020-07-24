@@ -2,7 +2,7 @@ from xml.dom import minidom
 import pandas as pd
 import json
 
-no_of_files = 1
+no_of_files = 8
 
 xmldoc = []
 imagenamelist = []
@@ -17,7 +17,7 @@ df = pd.DataFrame(columns=['count', 'points'])
 
 def format_data(data, itemlist, imagenamelist):
     for item, image in zip(itemlist, imagenamelist):
-        count = int(image.attributes['name'].value.replace('img-', '').replace('images', '').replace('.jpg', ''))
+        count = int(image.attributes['name'].value.replace('875-1049/','').replace('img-', '').replace('images', '').replace('.jpg', ''))
 
         point_data = []
         for point in item.attributes['points'].value.split(';'):
