@@ -7,6 +7,7 @@ from os.path import isfile, join
 
 ANNOTATION_PATH = '6d-annotations/resources/annotations'
 IMAGE_PATH = '6d-annotations/resources/images'
+SAVE_PATH = '6d-annotations/output'
 COLOURS = [
     (0,0,0),
  	(255,255,255),
@@ -76,6 +77,7 @@ def read_image(df):
         img = cv2.imread(IMAGE_PATH + '/' + image)
         img = draw_overlay(img, df.iloc[[i]])
         cv2.imshow('image', img)
+        cv2.imwrite(SAVE_PATH + '/' + image, img)
 
         if cv2.waitKey(0) == ord('q'):
              break
