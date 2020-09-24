@@ -41,7 +41,12 @@ def read_annotations():
             for i, o in enumerate(output):
                 if not cols[i] in data:
                     data[cols[i]] = []
-                data[cols[i]].append(int(float(o)*1000))
+                if 'x' in cols[i]:
+                    data[cols[i]].append(int(float(o)*640))
+                elif 'y' in cols[i]:
+                    data[cols[i]].append(int(float(o)*480))
+                else:
+                    data[cols[i]].append(int(o))
     
     df = pd.DataFrame.from_dict(data)
     return df
