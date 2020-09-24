@@ -66,8 +66,17 @@ def draw_overlay(img, points):
                 prev_point = [points.iloc[0][X+str(i)], points.iloc[0][Y+str(i)]]
             cv2.line(img, (int(prev_point[0]), int(prev_point[1])), (points.iloc[0][X+str(i)], points.iloc[0][Y+str(i)]), COLOURS[i], 5)
             prev_point = [points.iloc[0][X+str(i)], points.iloc[0][Y+str(i)]]
+    return img
 
+def draw_points(img, points, img_name):
+    X = 'x'
+    Y = 'y'
+    LEN = 9
 
+    for j in range(LEN):
+        for i in range(j):
+            img = cv2.circle(img, (points.iloc[0][X+str(i)], points.iloc[0][Y+str(i)]), 3, COLOURS[i], -1)
+        cv2.imwrite(SAVE_PATH + '/' + str(j) + '-' +img_name, img)
     return img
 
 def read_image(df):
@@ -75,6 +84,7 @@ def read_image(df):
 
     for i, image in enumerate(imageFiles):
         img = cv2.imread(IMAGE_PATH + '/' + image)
+        #img = draw_points(img, df.iloc[[i]], image)
         img = draw_overlay(img, df.iloc[[i]])
         cv2.imshow('image', img)
         cv2.imwrite(SAVE_PATH + '/' + image, img)
