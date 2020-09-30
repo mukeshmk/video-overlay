@@ -13,8 +13,9 @@ for i in range(no_of_files):
     imagenamelist.append(xmldoc[i].getElementsByTagName('image'))
     itemlist.append(xmldoc[i].getElementsByTagName('cuboid'))
 
-df = pd.DataFrame(columns=['count', 'faces', 'points'])
+df = pd.DataFrame(columns=['count', 'faces', 'points', 'x-range', 'y-range'])
 
+# could have written it better but wth! :P
 def format_data(data, itemlist, imagenamelist):
     for item, image in zip(itemlist, imagenamelist):
         count = int(image.attributes['name'].value.replace('1200-1416/','').replace('img-', '').replace('images', '').replace('.jpg', ''))
@@ -33,6 +34,27 @@ def format_data(data, itemlist, imagenamelist):
         data['count'].append(count)
         data['faces'].append(json.dumps(faces))
         data['points'].append(json.dumps(points))
+        data['x-range'].append(max(int(float(item.attributes['xbr2'].value)), int(float(item.attributes['xtr2'].value)),
+                                int(float(item.attributes['xbl2'].value)), int(float(item.attributes['xtl2'].value)),
+                                int(float(item.attributes['xbr1'].value)), int(float(item.attributes['xtr1'].value)),
+                                int(float(item.attributes['xbl1'].value)), int(float(item.attributes['xtl1'].value)))
+                                - 
+                                min(int(float(item.attributes['xbr2'].value)), int(float(item.attributes['xtr2'].value)),
+                                int(float(item.attributes['xbl2'].value)), int(float(item.attributes['xtl2'].value)),
+                                int(float(item.attributes['xbr1'].value)), int(float(item.attributes['xtr1'].value)),
+                                int(float(item.attributes['xbl1'].value)), int(float(item.attributes['xtl1'].value)))
+                                )
+
+        data['y-range'].append(max(int(float(item.attributes['ybr2'].value)), int(float(item.attributes['ytr2'].value)),
+                                int(float(item.attributes['ybl2'].value)), int(float(item.attributes['ytl2'].value)),
+                                int(float(item.attributes['ybr1'].value)), int(float(item.attributes['ytr1'].value)),
+                                int(float(item.attributes['ybl1'].value)), int(float(item.attributes['ytl1'].value)))
+                                 -
+                                min(int(float(item.attributes['ybr2'].value)), int(float(item.attributes['ytr2'].value)),
+                                int(float(item.attributes['ybl2'].value)), int(float(item.attributes['ytl2'].value)),
+                                int(float(item.attributes['ybr1'].value)), int(float(item.attributes['ytr1'].value)),
+                                int(float(item.attributes['ybl1'].value)), int(float(item.attributes['ytl1'].value)))
+                                )
 
     return data
 
@@ -45,6 +67,8 @@ else:
     data['count'] = []
     data['faces'] = []
     data['points'] = []
+    data['x-range'] = []
+    data['y-range'] = []
         
     for item, imagename in zip(itemlist, imagenamelist):
         data = format_data(data, item, imagename)
